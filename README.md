@@ -1,4 +1,4 @@
-<a href="https://codeclimate.com/github/tejiri4/MyService/maintainability"><img src="https://api.codeclimate.com/v1/badges/06c593f52ae069ad636c/maintainability" /></a>
+<a href="https://codeclimate.com/github/tejiri4/MyService/maintainability"><img src="https://api.codeclimate.com/v1/badges/06c593f52ae069ad636c/maintainability" /></a> [![CircleCI](https://circleci.com/gh/tejiri4/MyService.svg?style=svg)](https://circleci.com/gh/tejiri4/MyService)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
