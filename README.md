@@ -1,3 +1,5 @@
+<a href="https://codeclimate.com/github/tejiri4/MyService/maintainability"><img src="https://api.codeclimate.com/v1/badges/06c593f52ae069ad636c/maintainability" /></a>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
