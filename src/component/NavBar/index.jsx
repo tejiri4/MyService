@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 
 // component
 import Button from "../Button/index";
+import Logo from "../Logo";
 
 // scss
 import "./NavBar.scss";
@@ -25,23 +26,24 @@ const NavBar = props => {
 
   return (
     <div className="nav-bar-component">
+      <Logo />
       <nav>
         <ul>
           {navArray.map(navDetail => {
             return navLink(navDetail);
           })}
         </ul>
+        {
+          showButton && <Button
+            name="HIRE ME"
+            width="100px"
+            height="40px"
+            startColor="#4D62D3"
+            endColor="#2741d1"
+            color="white"
+          />
+        }
       </nav>
-      {
-        showButton && <Button
-          name="HIRE ME"
-          width="100px"
-          height="40px"
-          startColor="#4D62D3"
-          endColor="#2741d1"
-          color="white"
-        />
-      }
     </div>);
 };
 
