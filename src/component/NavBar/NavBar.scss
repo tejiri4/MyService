@@ -1,0 +1,30 @@
+.nav-bar-component {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 50px;
+
+  .active {
+    color: #4D62D3;
+  }
+
+  nav {
+    ul {
+      display: flex;
+      margin-right: 20px;
+      list-style-type: none;
+    }
+
+    span {
+      text-decoration: none;
+      color: black;
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    li {
+      margin-right: 20px;
+    }
+  }
+}
