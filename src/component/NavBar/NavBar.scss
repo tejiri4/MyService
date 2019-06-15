@@ -1,0 +1,32 @@
+.nav-bar-component {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 200px 0 200px;
+
+
+  .active {
+    color: #4D62D3;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    ul {
+      display: flex;
+      list-style-type: none;
+    }
+
+    span {
+      text-decoration: none;
+      color: black;
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    li {
+      margin-right: 20px;
+    }
+  }
+}
