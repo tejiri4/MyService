@@ -1,9 +1,9 @@
 // react libraries
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 //styles
-import "./Button.scss";
+import './Button.scss';
 
 const Button = props => {
   const { width, height, startColor, endColor, color, name } = props;
@@ -14,8 +14,8 @@ const Button = props => {
     color
   };
   return (
-    <div className="button-component">
-      <button className="button-component__button" style={buttonstyles}>{name}</button>
+    <div className='button-component'>
+      <button className='button-component__button' style={buttonstyles}>{name}</button>
     </div>
   );
 };

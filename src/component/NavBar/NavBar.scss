@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 10px 200px 0 200px;
+  margin: 10px 10% 0 10%;
 
 
   .active {
@@ -28,5 +28,12 @@
     li {
       margin-right: 20px;
     }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    nav {
+      display: none;
+    }
+    display: none;
   }
 }

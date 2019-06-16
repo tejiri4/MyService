@@ -1,16 +1,15 @@
 // react libraries
-import React, { useState } from "react";
-import PropTypes from "prop-types";
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 // component
-import Button from "../Button/index";
-import Logo from "../Logo";
+import Button from '../Button/index';
 
 // scss
-import "./NavBar.scss";
+import './NavBar.scss';
 
 const NavBar = props => {
-  const [activeNavBar, setActiveNavBar] = useState("home");
+  const [activeNavBar, setActiveNavBar] = useState('home');
 
   const { navArray, showButton } = props;
 
@@ -18,16 +17,15 @@ const NavBar = props => {
 
   const navLink = navDetail => (
     <li key={navDetail.key}>
-      <span onClick={handleNavLinkClick(navDetail.key)} className={`${navDetail.key === activeNavBar && "active"}`}>
+      <span onClick={handleNavLinkClick(navDetail.key)} className={`${navDetail.key === activeNavBar && 'active'}`}>
         {navDetail.name}
       </span>
     </li>
   );
 
   return (
-    <div className="nav-bar-component">
-      <Logo />
-      <nav>
+    <div className='nav-bar-component'>
+      <nav >
         <ul>
           {navArray.map(navDetail => {
             return navLink(navDetail);
@@ -35,12 +33,12 @@ const NavBar = props => {
         </ul>
         {
           showButton && <Button
-            name="HIRE ME"
-            width="100px"
-            height="40px"
-            startColor="#4D62D3"
-            endColor="#2741d1"
-            color="white"
+            name='HIRE ME'
+            width='100px'
+            height='40px'
+            startColor='#4D62D3'
+            endColor='#2741d1'
+            color='white'
           />
         }
       </nav>
