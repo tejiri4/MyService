@@ -22,7 +22,8 @@ const SideNav = props => {
       {
         navArray.map(navDetail => renderSideNavDetails(navDetail))
       }
-    </div>);
+    </div>
+  );
 };
 
 SideNav.propTypes = {

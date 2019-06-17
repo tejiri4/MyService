@@ -1,5 +1,6 @@
 // react libraries
 import React from 'react';
+import PropTypes from 'prop-types';
 
 // styles
 import './Hamburger.scss';
@@ -17,5 +18,9 @@ const Hamburger = props => (
     </label>
   </div>
 );
+
+Hamburger.propTypes = {
+  handleHamburgerClick: PropTypes.func
+}
 
 export default Hamburger;
