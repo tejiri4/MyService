@@ -12,8 +12,8 @@
   "parserOptions": {
     "ecmaFeatures": {
       "modules": true,
-      "spread" : true,
-      "restParams" : true,
+      "spread": true,
+      "restParams": true,
       "jsx": true
     },
     "ecmaVersion": 2018,
@@ -53,7 +53,11 @@
         "ignoreClassFields": true
       }
     ],
-    "quotes": 2,
+    "quotes": [
+      2,
+      "backtick",
+      "single"
+    ],
     "no-console": 1,
     "no-debugger": 1,
     "no-var": 1,
@@ -68,7 +72,6 @@
     "no-alert": 0,
     "no-lone-blocks": 0,
     "jsx-a11y/label-has-for": 0,
-    "jsx-quotes": 1,
     "react/display-name": [
       1,
       {
@@ -94,7 +97,7 @@
       {
         "ignoreDOMComponents": false,
         "ignoreRefs": false,
-        "allowArrowFunctions": false,
+        "allowArrowFunctions": true,
         "allowFunctions": false,
         "allowBind": true
       }

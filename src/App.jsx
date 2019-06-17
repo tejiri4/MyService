@@ -1,4 +1,7 @@
+// react libraries
 import React from "react";
+
+// component
 import ProfilePage from "./pages/Profile/index";
 
 const App = () => {
