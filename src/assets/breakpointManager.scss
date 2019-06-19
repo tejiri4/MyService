@@ -5,3 +5,7 @@
 @mixin for-large {
   @media (min-width: 800px) { @content; }
 }
+
+@mixin for-side-nav {
+  @media only screen and (min-width: 1000px) { @content; }
+}
