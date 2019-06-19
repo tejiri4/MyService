@@ -1,8 +1,8 @@
 .profile-component {
-  .header {
+  .header, .content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 10px 10% 0 10%;
+    margin: 0 20% 0 20%;
   }
 }

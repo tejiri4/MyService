@@ -33,12 +33,15 @@ const NavBar = props => {
         </ul>
         {
           showButton && <Button
-            name='HIRE ME'
-            width='100px'
-            height='40px'
-            startColor='#4D62D3'
-            endColor='#2741d1'
-            color='white'
+            name='Hire'
+            styles={
+              {
+                width: '100px',
+                height: '40px',
+                color: '#1367fb',
+                borderColor: '#1367fb'
+              }
+            }
           />
         }
       </nav>

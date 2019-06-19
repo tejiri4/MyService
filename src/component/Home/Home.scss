@@ -1,0 +1,40 @@
+@import '../../assets/breakpointManager.scss';
+@import '../../assets/variable.scss';
+
+.home {
+  margin-top: 10%;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__greeting {
+    font-size: 20px;
+    color: $Vivid-blue;
+    margin-bottom: 10px;
+  }
+
+  &__name {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  &__role {
+    font-weight: lighter;
+    font-size: 15px;
+    color: grey;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  @include for-small {
+    .profile-photo {
+      display: none;
+    }
+  }  
+}
