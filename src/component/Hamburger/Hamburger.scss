@@ -1,3 +1,5 @@
+@import '../../assets/breakpointManager.scss';
+
 .hamburger-component {
   input[type="checkbox"] {
     display: none;
@@ -55,8 +57,8 @@
     transform: translate(0px,-5px) rotate(-45deg);
     transition-delay: 0.4s;
   }
-  
-  @media only screen and (min-width: 1000px) { 
+
+  @include for-large {
     display: none; 
-  }    
+  }  
 }
