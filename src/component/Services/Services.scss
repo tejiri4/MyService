@@ -1,0 +1,24 @@
+.service-component {
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 20% 0 20%;
+    padding-top: 50px;
+
+    &--header {
+      display: flex;
+      font-size: 25px;
+      margin-bottom: 30px;
+      font-weight: 300;
+    }
+
+    &--service-cards {
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
+}

@@ -2,12 +2,13 @@
 import React, { useState } from 'react';
 
 // component
-import NavBar from '../../component/NavBar/index';
+import NavBar from '../../component/NavBar';
 import SideNav from '../../component/SideNav';
-import Logo from '../../component/Logo/index';
-import Hamburger from '../../component/Hamburger/index';
-import Home from '../../component/Home/index';
-import AboutMe from '../../component/AboutMe/index';
+import Logo from '../../component/Logo';
+import Hamburger from '../../component/Hamburger';
+import Home from '../../component/Home';
+import AboutMe from '../../component/AboutMe';
+import Services from '../../component/Services';
 
 // fixtures
 import { navArray } from './fixtures';
@@ -37,6 +38,7 @@ const ProfilePage = () => {
         <Home />
       </div>
       <AboutMe />
+      <Services />
       <SideNav classes={`${showSideNav ? '' : '--hide'}`} />
     </div>
   );

@@ -3,7 +3,7 @@ import React from 'react';
 
 // components
 import Button from '../Button/index';
-import CustomizeText from '../CustomizeText/index';
+import CustomizeText from '../CustomizeText';
 
 // styles
 import './AboutMe.scss';
