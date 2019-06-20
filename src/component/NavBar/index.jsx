@@ -34,10 +34,14 @@ const NavBar = props => {
         {
           showButton && <Button
             name='Hire'
-            width='100px'
-            height='40px'
-            color='#1367fb'
-            borderColor='#1367fb'
+            styles={
+              {
+                width: '100px',
+                height: '40px',
+                color: '#1367fb',
+                borderColor: '#1367fb'
+              }
+            }
           />
         }
       </nav>

@@ -1,0 +1,25 @@
+.customize-text-component {
+  margin-left: 5px;
+  margin-right: 5px;
+  
+  &__text {
+    font-weight: 600; 
+  }
+
+  &__underline {
+    display: flex;
+
+    div {
+      margin: 2px;
+      height: 3px;
+      border-radius: 5px;
+      &:nth-child(1) {
+        width: 20px;
+      }
+
+      &:nth-child(2) {
+        width: 5px;
+      }
+    }
+  }
+}
