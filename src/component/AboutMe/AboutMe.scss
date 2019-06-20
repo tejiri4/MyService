@@ -1,0 +1,47 @@
+.about-me-component {
+  height: 300px;
+  width: 100%;
+  background-color: #F9F9F9;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20% 0 20%;
+    padding-top: 50px;
+
+    &--header {
+      display: flex;
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+
+    &--greetings {
+      margin-bottom: 5px;
+      font-size: 15px;
+      color: #68c5d9;
+      font-weight: 800;
+
+
+      span {
+        font-style: italic;
+        font-weight: 500;
+        font-size: 13px;
+        margin-left: 5px;
+      }
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+    }
+
+    &--description {
+      margin-bottom: 15px;
+      font-size: 12px;
+      width: 400px;
+      color: grey;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+  }
+}
