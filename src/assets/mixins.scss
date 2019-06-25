@@ -1,0 +1,43 @@
+@import './variable.scss';
+
+@mixin header {
+  display: flex;
+  font-size: 25px;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+@mixin description {
+  margin-bottom: 15px;
+  font-size: 12px;
+  width: 400px;
+  color: $Suva-grey;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+@mixin circleBottom($color, $positionX, $positionY) {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -80px;
+  height: 50px;
+  background: radial-gradient(circle at bottom, $color, $color 50%, transparent 50%);
+  background-size: 150px 50px;
+  background-position:  $positionX $positionY;
+  background-repeat: repeat-x;
+}
+
+@mixin circleTop($color, $positionX, $positionY) {
+  background: radial-gradient(
+    circle at top,
+    transparent,
+    transparent 50%,
+    $color 50%
+  );
+  background-size: 150px 50px;
+  background-position: $positionX $positionY;
+  background-repeat: repeat-x;
+  top: -30px;
+}

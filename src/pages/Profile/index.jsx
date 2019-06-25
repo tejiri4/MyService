@@ -9,6 +9,7 @@ import Hamburger from '../../component/Hamburger';
 import Home from '../../component/Home';
 import AboutMe from '../../component/AboutMe';
 import Services from '../../component/Services';
+import Skills from '../../component/Skills';
 
 // fixtures
 import { navArray } from './fixtures';
@@ -39,6 +40,7 @@ const ProfilePage = () => {
       </div>
       <AboutMe />
       <Services />
+      <Skills />
       <SideNav classes={`${showSideNav ? '' : '--hide'}`} />
     </div>
   );
