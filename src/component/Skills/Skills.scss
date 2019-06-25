@@ -1,0 +1,52 @@
+@import '../../assets/variable.scss';
+@import '../../assets/mixins.scss';
+
+.skills-component {
+  position: relative;
+
+  &__child {
+    margin-top: 100px;
+    background-color: $White-smoke;
+    opacity: 0.9;  
+    height: 200px;
+    padding: 8px;
+    padding-bottom: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+
+    &--content {
+      margin: 50px 20% 0 20%;
+     display: flex;
+     justify-content: space-between; 
+    }
+  }
+
+  &--header {
+    @include header;
+  }
+
+  &--description {
+    @include description;
+  }
+ 
+  .one::before,
+  .one::after {
+    @include circleBottom(#FCFCFC, 80px, 30px);
+  }
+
+  .two::before,
+  .two::after {
+    @include circleBottom( $White-smoke, 0, 30px);
+  }
+ 
+  .two:after {
+    @include circleTop( $White-smoke, 75px, -20px);
+  }
+
+  .one:after {
+    @include circleTop( #FCFCFC, 155px, -20px);
+  }
+}

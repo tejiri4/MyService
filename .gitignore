@@ -1,5 +1,5 @@
 # ignore node modules folder
 node_modules
 
-# coverage folder
+# ignore coverage folder
 coverage
