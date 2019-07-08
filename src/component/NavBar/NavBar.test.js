@@ -10,7 +10,8 @@ describe('NavBar component', () => {
   beforeEach(() => {
     const props = {
       navArray,
-      showButton: true
+      showButton: true,
+      selectedNavElement: () => {}
     };
     wrapper = shallow(<NavBar {...props} />);
   });

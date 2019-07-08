@@ -10,6 +10,7 @@ import Home from '../../component/Home';
 import AboutMe from '../../component/AboutMe';
 import Services from '../../component/Services';
 import Skills from '../../component/Skills';
+import Works from '../../component/Works';
 
 // fixtures
 import { navArray } from './fixtures';
@@ -33,6 +34,10 @@ const ProfilePage = () => {
         <NavBar
           navArray={navArray}
           showButton
+          showTips={false}
+          active={'home'}
+          fontSize='11px'
+          marginRight='20px'
         />
       </div>
       <div className='content'>
@@ -41,6 +46,7 @@ const ProfilePage = () => {
       <AboutMe />
       <Services />
       <Skills />
+      <Works />
       <SideNav classes={`${showSideNav ? '' : '--hide'}`} />
     </div>
   );

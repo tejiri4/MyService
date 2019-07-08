@@ -9,15 +9,24 @@ import Button from '../Button/index';
 import './NavBar.scss';
 
 const NavBar = props => {
-  const [activeNavBar, setActiveNavBar] = useState('home');
+  const [activeNavBar, setActiveNavBar] = useState(props.active);
 
-  const { navArray, showButton } = props;
+  const { navArray, showButton, showTips, fontSize, marginRight, selectedNavElement, workLength } = props;
 
-  const handleNavLinkClick = key => () => setActiveNavBar(key);
+
+  const handleNavLinkClick = key => () => {
+    setActiveNavBar(key)
+    showTips && selectedNavElement(key)
+  };
+
+
+  const renderTips = (value, key) => (<div className={`tips ${key === activeNavBar ? 'show' : 'hide'}`}>{value}</div>);
+
 
   const navLink = navDetail => (
-    <li key={navDetail.key}>
-      <span onClick={handleNavLinkClick(navDetail.key)} className={`${navDetail.key === activeNavBar && 'active'}`}>
+    <li key={navDetail.key} style={{ marginRight: marginRight }}>
+      {showTips && renderTips(workLength, navDetail.key)}
+      <span onClick={handleNavLinkClick(navDetail.key)} className={`${navDetail.key === activeNavBar && 'active'}`} style={{ fontSize: fontSize }}>
         {navDetail.name}
       </span>
     </li>
@@ -56,6 +65,12 @@ NavBar.propTypes = {
       key: PropTypes.string
     }),
   ),
+  showTips: PropTypes.bool, 
+  fontSize: PropTypes.string,
+  marginRight: PropTypes.string,
+  active: PropTypes.string,
+  workLength: PropTypes.number,
+  selectedNavElement: PropTypes.func
 };
 
 export default NavBar;
