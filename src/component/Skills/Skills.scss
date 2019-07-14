@@ -18,14 +18,14 @@
     top: 0;
 
     &--content {
-      margin: 50px 20% 0 20%;
+     margin: 20px 20% 10px 20%;
      display: flex;
      justify-content: space-between; 
     }
   }
 
   &--header {
-    @include header;
+    @include header(30px);
   }
 
   &--description {

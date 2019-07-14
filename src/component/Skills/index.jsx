@@ -25,9 +25,11 @@ const Skills = () => {
           </div>
           <div>
             {
-              skillsArray.map(({ skill, percentage, color}, index) =>  <SkillCard skill={skill} percentage={percentage} color={color} key={index} />)
+              skillsArray.map(({ skill, percentage, color }, index) =>
+                <SkillCard skill={skill} percentage={percentage} color={color} key={index} />
+              )
             }
-            </div>
+          </div>
         </div>
       </div>
     </div>

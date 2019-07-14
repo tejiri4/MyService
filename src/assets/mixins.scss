@@ -1,9 +1,9 @@
 @import './variable.scss';
 
-@mixin header {
+@mixin header($marginBottom) {
   display: flex;
   font-size: 25px;
-  margin-bottom: 30px;
+  margin-bottom: $marginBottom;
   font-weight: 300;
 }
 
