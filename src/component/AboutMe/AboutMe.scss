@@ -1,15 +1,25 @@
 @import '../../assets/mixins.scss';
+@import '../../assets/breakpointManager.scss';
 
 .about-me-component {
-  height: 300px;
+  display: flex;
+  position: relative;
+  height: auto;
   width: 100%;
   background-color: #F9F9F9;
 
   &__content {
     display: flex;
     justify-content: space-between;
-    margin: 0 20% 0 20%;
+     margin: 0 20% 0 20%;
     padding-top: 50px;
+    padding-bottom: 50px;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+
+    &--profile {
+      width: 50%;
+    }
 
     &--header {
       @include header(30px);
@@ -37,6 +47,18 @@
 
     &--description {
       @include description;
+    }
+  }
+
+  @include for-small {
+    &__content {
+      &--description {
+        width: 250px;
+      }
+
+      &--profile {
+        width: 100%;
+      }
     }
   }
 }

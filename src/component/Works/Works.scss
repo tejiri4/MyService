@@ -1,9 +1,9 @@
 @import '../../assets/mixins.scss';
+@import '../../assets/breakpointManager.scss';
 
 .works-component {
   position: relative;
-  top: 400px;
-  height: 600px;
+  height: auto;
 
   .triangle {
     clip-path: polygon(50% 62%, 0% 100%, 100% 100%);
@@ -24,6 +24,8 @@
     display: flex;
     flex-direction: column;
     height: 800px;
+    position: relative;
+    height: auto;
 
     &--header {
       display: flex;
@@ -61,5 +63,14 @@
   &__triangle {
     display: flex;
     flex-direction: column;
+  }
+
+  @include for-small {
+    &__content {
+
+      &--body {
+        justify-content: center;
+      }
+     }
   }
 }

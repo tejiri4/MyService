@@ -1,15 +1,21 @@
+@import '../../assets/breakpointManager.scss';
+
 .service-component {
+  display: flex;
+  position: relative;
+  height: auto;
+
   &__content {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     margin: 0 20% 0 20%;
     padding-top: 50px;
+    width: 100%;
 
     &--header {
       display: flex;
       font-size: 25px;
-      margin-bottom: 30px;
       font-weight: 300;
     }
 
@@ -19,6 +25,19 @@
       overflow: hidden;
       flex-wrap: wrap;
       width: 100%;
+      margin-top: 20px;
+    }
+  }
+
+  @include for-small {
+    &__content {
+      &--service-cards {
+        justify-content: center;
+      }
+
+      &--header {
+        justify-content: center;
+      }
     }
   }
 }

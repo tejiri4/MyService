@@ -1,17 +1,16 @@
 @import '../../assets/variable.scss';
 @import '../../assets/mixins.scss';
+@import '../../assets/breakpointManager.scss';
 
 .skills-component {
   position: relative;
+  height: auto;
 
   &__child {
     margin-top: 100px;
     background-color: $White-smoke;
     opacity: 0.9;  
-    height: 200px;
-    padding: 8px;
-    padding-bottom: 50px;
-    position: absolute;
+    height: auto;
     left: 0;
     right: 0;
     bottom: 0;
@@ -20,8 +19,25 @@
     &--content {
      margin: 20px 20% 10px 20%;
      display: flex;
-     justify-content: space-between; 
+     justify-content: space-between;
+     flex-wrap: wrap; 
+     width: 60%;
     }
+
+
+    &--details {
+      width: 50%;
+    }
+
+    &--percentage {
+      width: 50%
+    }
+
+  }
+
+  .two {
+    width: 100%;
+    margin-bottom: 50px;
   }
 
   &--header {
@@ -30,6 +46,7 @@
 
   &--description {
     @include description;
+    width: 80%;
   }
  
   .one::before,
@@ -48,5 +65,21 @@
 
   .one:after {
     @include circleTop( #FCFCFC, 155px, -20px);
+  }
+
+  @include for-small {
+    &__child {
+      &--details {
+        width: 100%;
+      }
+  
+      &--percentage {
+        width: 100%
+      }
+    }
+
+    &--description {
+      width: 100%;
+    }
   }
 }

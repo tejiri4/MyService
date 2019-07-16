@@ -66,7 +66,7 @@ const Works = () => {
         </div>
         <div className='works-component__content'>
           <div className='works-component__content--header'>
-            <div className='works-component__content--title'>My creative <CustomizeText text='Work' color='#2868C1' /></div>
+            <div className='works-component__content--title'>My creative <CustomizeText text='Work' color='#2868C1' colorText={true} /></div>
             <div>
               <NavBar
                 navArray={works}

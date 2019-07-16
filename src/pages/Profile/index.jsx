@@ -11,6 +11,7 @@ import AboutMe from '../../component/AboutMe';
 import Services from '../../component/Services';
 import Skills from '../../component/Skills';
 import Works from '../../component/Works';
+import Contact from '../../component/Contact/index';
 
 // fixtures
 import { navArray } from './fixtures';
@@ -46,8 +47,9 @@ const ProfilePage = () => {
       <AboutMe />
       <Services />
       <Skills />
-      <Works />
+       <Works />
       <SideNav classes={`${showSideNav ? '' : '--hide'}`} />
+      <Contact />
     </div>
   );
 };
