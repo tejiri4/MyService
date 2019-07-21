@@ -24,9 +24,9 @@
 		height: 20px;
 		transition: all 0.3s ease-out;
 		border-radius: 5px;
-    padding: 5px;
-    font-size: 10px;
-    white-space: nowrap;
+		padding: 5px;
+		font-size: 10px;
+		white-space: nowrap;
 	}
 
 	.shadow {
@@ -56,6 +56,6 @@
   }
 
   @include for-side-nav {
-    transform: translate(-150px);
+    display: none;
   }   
 }

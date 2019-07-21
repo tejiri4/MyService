@@ -17,13 +17,13 @@ const Skills = () => {
       <div className='skills-component__child  one' />
       <div className='skills-component__child  two'>
         <div className='skills-component__child--content'>
-          <div>
-            <div className='skills-component--header'>What <CustomizeText text='Skills' color='#7E7BB9' /> i have</div>
+          <div className='skills-component__child--details'>
+            <div className='skills-component--header'>What <CustomizeText text='Skills' color='#7E7BB9' colorText={true} /> i have</div>
             <div className='skills-component--description'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id elit at erat convallis cursus a ac quam. Curabitur ullamcorper augue in ullamcorper ornare. Curabitur lacinia risus vitae ligula porttitor maximus. Etiam volutpat dictum libero a lobortis. Pellentesque suscipit sagittis odio vel finibus. Curabitur at placerat felis.
           </div>
           </div>
-          <div>
+          <div className='skills-component__child--percentage'>
             {
               skillsArray.map(({ skill, percentage, color }, index) =>
                 <SkillCard skill={skill} percentage={percentage} color={color} key={index} />

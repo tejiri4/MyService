@@ -5,10 +5,10 @@ import PropTypes from 'prop-types';
 // styles
 import './CustomizeText.scss';
 
-const CustomizeText = ({ text, color }) => {
+const CustomizeText = ({ text, color, colorText }) => {
   return (
     <div className='customize-text-component'>
-      <div className='customize-text-component__text' style={{ color }}>
+      <div className='customize-text-component__text' style={{ color: colorText && color }}>
         {text}
       </div>
       <div className='customize-text-component__underline'>
@@ -21,7 +21,8 @@ const CustomizeText = ({ text, color }) => {
 
 CustomizeText.propTypes = {
   text: PropTypes.string,
-  color: PropTypes.string
+  color: PropTypes.string,
+  colorText: PropTypes.bool
 }
 
 export default CustomizeText;

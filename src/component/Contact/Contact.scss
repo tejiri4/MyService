@@ -1,0 +1,172 @@
+@import '../../assets/breakpointManager.scss';
+
+.contact-component {
+  position: relative;
+  height: auto;
+  width: 100%;
+  background-image: linear-gradient(to right, #36A9C2 , #2C62B4);
+  margin-top: 20px;
+
+  &__content {
+    margin: 0px 20% 0 20%;
+    display: flex;
+    flex-direction: column;
+
+    .form-section {
+      display: flex;
+      flex-direction: row;
+      height: auto;
+      margin: -55px 0 0 0;
+      background-color: #FFFFFF;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    .sectionOne {
+      padding: 20px;
+      width: 50%;
+
+      &__title {
+        display: flex;
+        font-weight: bold;
+      }
+
+      &__body {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      &__input-area {
+        width: 50%;
+        input {
+          width: 80%;
+          padding: 7px 15px 7px 15px;
+          outline-color: #F24EA7;
+          margin: 5px 0 5px 0;
+          outline-width: 1px;
+          border: none;
+          border: 1px solid #EEEEEE;
+          border-radius: 2px;
+        }
+
+        input:focus::-webkit-input-placeholder {
+          color: #F24EA7;
+        }
+
+        input:focus {
+          outline-style: solid;
+        }
+      }
+
+      &__textarea {
+        width: 50%;
+
+        textarea {
+          padding: 5px;
+          outline-color: #F24EA7;
+          margin: 5px 0 5px 0;
+          outline-width: 1px;
+          border: none;
+          border: 1px solid #EEEEEE;
+          border-radius: 2px;
+          width: 95%;
+          height: 55px;
+        }
+
+        textarea:focus {
+          outline-style: solid;
+        }
+
+        textarea:focus::-webkit-input-placeholder {
+          color: #F24EA7;
+        }
+      }
+    }
+
+    .sectionTwo {
+      width: 30%;
+      border-left: 1px solid #EEEEEE;
+      padding: 20px;
+
+      &__contact-details {
+        display: flex;
+
+        &--icon {
+          width: 20%
+        }
+        img {
+          width: 25px;
+          height: 25px;
+        }
+        &--content {
+          width: 70%;
+        }
+
+        &--header {
+          margin-top: 5px;
+          font-size: 12px;
+          font-weight: 600;
+        }
+
+        &--body {
+          font-size: 10px;
+          font-weight: 400;
+          color: #A9A9A9;
+          margin-bottom: 8px;
+        }
+      }
+    }
+
+    &--footer {
+      display: flex;
+      justify-content: space-between;
+      font-size: 10px;
+      margin-top: 10px;
+    }
+
+    &--footer-left {
+      color: #FFFFFF;
+
+      img {
+        width: 7px;
+        height: 7px;
+      }
+    }
+
+    &--footer-right {
+      color: #FFFFFF;
+
+      img {
+        width: 10px;
+        height: 10px;
+      }
+
+      span {
+        color: #F24EA7;
+      }
+    }
+  }
+
+  @include for-small {
+    .sectionOne {
+      width: 100%;
+
+      &__input-area  {
+        width: 100%
+      }
+
+      &__textarea  {
+        width: 100%;
+
+        textarea {
+          width: 80%;
+          padding: 7px 15px 7px 15px;
+        }
+      }
+    }
+
+    .sectionTwo {
+      width: 100% 
+    }
+  }
+}

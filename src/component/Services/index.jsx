@@ -16,7 +16,7 @@ const Services = () => {
   return (
     <div className='service-component'>
       <div className='service-component__content'>
-        <div className='service-component__content--header'>What <CustomizeText text='Service' color='#ff5fa4' /> i offer</div>
+        <div className='service-component__content--header'>What <CustomizeText text='Service' color='#ff5fa4' colorText={true} /> i offer</div>
         <div className='service-component__content--service-cards'>
           {
             ServiceCardDetails.map(({ img, title, description }, index) =>
