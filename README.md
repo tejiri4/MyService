@@ -2,6 +2,18 @@
 
 A porfolio app which display a summary of a software developer, skills, contact and projects done.
 
+## Stacks
+
+- React
+- Jest
+
+## How to manually test the app
+
+- Clone the Repository
+- Run npm install to install dependencies
+- Run npm start to see a local display of the application
+- Run npm test 
+
 ## Available Scripts
 
 In the project directory, you can run:
